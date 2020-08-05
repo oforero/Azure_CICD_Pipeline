@@ -11,8 +11,9 @@ variables:
   azureServiceConnectionId: '2f685fbc-e018-4598-bb09-829a0cbb1205'
   
   # Web app name
-  webAppName: 'flask-sklearn'
-
+  webAppName: 'oforero-flask-sklearn'
+  webAppDir: 'flask-sklearn'
+  
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
@@ -20,7 +21,7 @@ variables:
   environmentName: 'webapp'
 
   # Project root folder. Point to the folder containing manage.py file.
-  projectRoot: $(System.DefaultWorkingDirectory)/$(webAppName)
+  projectRoot: $(System.DefaultWorkingDirectory)/$(webAppDir)
   
   # Python version: 3.7
   pythonVersion: '3.7'
