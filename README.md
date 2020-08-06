@@ -33,11 +33,21 @@ You can adjust the prediction by editing the CURL call in that script.
 
 ![Run Docker](Screenshots/screenshot_2.png)
 
-### Running the App in Azure
+## Other Screenshots
 
 * Project running on Azure App Service
 
+![Run Docker](Screenshots/screenshot_3.png)
+
+![Run Docker](Screenshots/screenshot_4.png)
+
 * Project cloned into Azure Cloud Shell
+
+![Run Docker](Screenshots/screenshot_5.png)
+
+* GitHub Actions
+
+![Run Docker](Screenshots/screenshot_6.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
