@@ -12,6 +12,7 @@ LOG.setLevel(logging.INFO)
 LOG.info(f"Executing name: {__name__}")
 
 def setup_app(app):
+  LOG.info("Setting up the application")
   app.clf = joblib.load("boston_housing_prediction.joblib")
 
 setup_app()
