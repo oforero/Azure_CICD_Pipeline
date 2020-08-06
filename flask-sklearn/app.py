@@ -15,7 +15,7 @@ def setup_app(app):
   LOG.info("Setting up the application")
   app.clf = joblib.load("boston_housing_prediction.joblib")
 
-setup_app()
+setup_app(app)
 
 def scale(payload):
     """Scales Payload"""
