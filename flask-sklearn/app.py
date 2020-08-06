@@ -11,6 +11,11 @@ LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
 LOG.info(f"Executing name: {__name__}")
 
+def setup_app(app):
+  app.clf = joblib.load("boston_housing_prediction.joblib")
+
+setup_app()
+
 def scale(payload):
     """Scales Payload"""
 
@@ -55,7 +60,7 @@ def predict():
 
     """
 
-
+    clf = app.clf
     json_payload = request.json
     LOG.info(f"JSON payload: {json_payload}")
     inference_payload = pd.DataFrame(json_payload)
@@ -65,5 +70,4 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    clf = joblib.load("boston_housing_prediction.joblib")
     app.run(host='0.0.0.0', port=80, debug=True)
