@@ -1,22 +1,39 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+This is a Web Service that uses a pretrained model to predict Boston house prices.
+The web service is deployed to Azure as an App service.
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* Trello: https://trello.com/b/DglsTOf3/udacity-ci-cd
+* Spred Sheet: https://docs.google.com/spreadsheets/d/1RVkXWyg3vh1xjo7_pgdA8kCZQgEEg9pqjFrYXtfy8wY/edit?usp=sharing
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+### Running the App Locally with Docker
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+To run the app locally you need to be running Docker. 
+Go to the `flask-sklearn` directory and execute the script to start a container running the app:
 
+```
+$ cd flask-sklearn
+$ ./run_docker.sh
+```
 
-* Project running inside a Docker container
+![Run Docker](Screenshots/screenshot_1.png)
+
+Open a new terminal, go to the same directory and execute the client call:
+
+```
+$ cd flask-sklearn
+$ ./make_prediction.sh
+```
+
+You can adjust the prediction by editing the CURL call in that script.
+
+![Run Docker](Screenshots/screenshot_2.png)
+
+### Running the App in Azure
 
 * Project running on Azure App Service
 
