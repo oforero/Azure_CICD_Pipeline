@@ -51,20 +51,32 @@ You can adjust the prediction by editing the CURL call in that script.
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
+![Run Docker](Screenshots/screenshot_6.png)
+
 * Output of a test run
+
+![Run Docker](Screenshots/screenshot_6.png)
 
 * Successful run of the project in Azure Pipelines
 
+![Run Docker](Screenshots/screenshot_8.png)
+
 * Running Azure App Service
+
+![Run Docker](Screenshots/screenshot_3.png)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell> 
 
+![Run Docker](Screenshots/screenshot_4.png)
+
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+The most obvious enhancement is to add a Web GUI for the application to allow users to make predictions interactively.
+
+After that adding support for more cities is the most obvious next step.
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+
 
 
