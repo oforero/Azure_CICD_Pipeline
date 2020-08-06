@@ -59,7 +59,7 @@ You can adjust the prediction by editing the CURL call in that script.
 
 * Successful run of the project in Azure Pipelines
 
-![Run Docker](Screenshots/screenshot_8.png)
+![Run Docker](Screenshots/screenshot_7.png)
 
 * Running Azure App Service
 
